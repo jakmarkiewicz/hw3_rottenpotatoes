@@ -6,6 +6,8 @@ Given /the following movies exist/ do |movies_table|
     # you should arrange to add that movie to the database here.
     Movie.create!(movie)
   end
+  # check if populating the db worked
+  #sss
   assert movies_table.hashes.size == Movie.all.count
 end
 
